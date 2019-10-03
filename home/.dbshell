@@ -1,0 +1,54 @@
+help
+show dbs
+use demo
+show dbs
+db.dogs.insert({name: "Rusty", breed: "Mutt"})
+show dbs
+show collections
+db.dogs.find()
+db.dogs.insert({name: "Lucy", breed: "Mutt"})
+db.dogs.find()
+db.dogs.find({name: "Rusty"})
+db.dogs.insert({name: "Lulu", breed: "Poodle"})
+db.dogs.find({breed: "Mutt"})
+db.dogs.update({name: "Lulu"}, {breed: "Labradoodle"})
+db.dogs.find({breed: "Mutt"})
+db.dogs.find()
+db.dogs.update({name: "Rusty"}, {$set: {name: "Tater", isCute: true}})
+db.dogs.find()
+db.dogs.remove({breed: "Labradoodle"})
+db.dogs.find()
+show dbs
+use yelp_camp
+show collections
+db.campgrounds.find()
+show dbs
+use yelp_camp
+show collections
+db.campgrounds.find()
+db.campgrounds.drop()
+db.campgrounds.find()
+show dbs
+use blog_demo_2
+db.users.find()
+show dbs
+use blog_demo_2
+db.collection.find({posts})
+db.users.find()
+db.Post.find()
+db.post.find()
+db.posts.find()
+show dbs
+use blog_demo_2
+db.user.find()
+db.users.find()
+use db yelp_camp_v3
+use yelp_camp_v3
+db.campgrounds.find()
+use yelp_camp_v3
+db.campgrounds.find()
+use yelp_camp_v3
+db.campgrounds.find()
+show dbs
+use auth_demo_app
+db.users.find()
